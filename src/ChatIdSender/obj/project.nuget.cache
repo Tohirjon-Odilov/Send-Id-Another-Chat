@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aoMSNnP1IJ0lom6l5/CZPEBU0oVa5m4i9LmJejvCSsO2+MDro58fLvEyJXU8PK3BrONidrk1BzsPwSkp/zBdKg==",
+  "dgSpecHash": "BxJziZ8po864mYpEoH9J6eH7wokSRHr+upkZev4zPyb6McjuXYHOmvxm4E2H2BlqJ1wJ2Ip0jcJTOOU9CRoIfg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\Desktop\\.net_projects\\Send-Id-Another-Chat\\src\\ChatIdSender\\ChatIdSender.csproj",
+  "projectFilePath": "C:\\Users\\Tohirjon Odilov\\source\\repos\\TelegramBot\\Send-Id-Another-Chat\\src\\ChatIdSender\\ChatIdSender.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ChatIdSender
-build_property.ProjectDir = C:\Users\user\Desktop\.net_projects\Send-Id-Another-Chat\src\ChatIdSender\
+build_property.ProjectDir = C:\Users\Tohirjon Odilov\source\repos\TelegramBot\Send-Id-Another-Chat\src\ChatIdSender\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

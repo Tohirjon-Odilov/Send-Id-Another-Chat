@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\user\\.nuget\\packages\\": {}
+    "C:\\Users\\Tohirjon Odilov\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Desktop\\.net_projects\\Send-Id-Another-Chat\\src\\ChatIdSender\\ChatIdSender.csproj",
+      "projectUniqueName": "C:\\Users\\Tohirjon Odilov\\source\\repos\\TelegramBot\\Send-Id-Another-Chat\\src\\ChatIdSender\\ChatIdSender.csproj",
       "projectName": "ChatIdSender",
-      "projectPath": "C:\\Users\\user\\Desktop\\.net_projects\\Send-Id-Another-Chat\\src\\ChatIdSender\\ChatIdSender.csproj",
-      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Desktop\\.net_projects\\Send-Id-Another-Chat\\src\\ChatIdSender\\obj\\",
+      "projectPath": "C:\\Users\\Tohirjon Odilov\\source\\repos\\TelegramBot\\Send-Id-Another-Chat\\src\\ChatIdSender\\ChatIdSender.csproj",
+      "packagesPath": "C:\\Users\\Tohirjon Odilov\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Tohirjon Odilov\\source\\repos\\TelegramBot\\Send-Id-Another-Chat\\src\\ChatIdSender\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Tohirjon Odilov\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
