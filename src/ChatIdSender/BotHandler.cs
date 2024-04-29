@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
-using Telegram.Bot;
+﻿using Telegram.Bot;
 using Telegram.Bot.Polling;
 using Telegram.Bot.Types;
 using Telegram.Bot.Types.Enums;
@@ -57,13 +51,50 @@ namespace ChatIdSender
                 return;
             try
             {
-                await client.SendTextMessageAsync(
-                        chatId: "",
-                        text: message.Chat.Id.ToString(),
-                        cancellationToken: token);
-            } catch
+                if (message.Text != null)
+                {
+                    if (message.Text == "/start")
+                    {
+
+                        await client.SendTextMessageAsync(
+                                chatId: "-1002036835370",
+                                text: $"UserName: <b>${message.Chat.FirstName}</b>\nChatId : <pre>{message.Chat.Id.ToString()}</pre>",
+                                parseMode: ParseMode.Html,
+                                cancellationToken: token);
+                    }
+                } else if (message.Photo != null)
+                {
+                    var photo = message.Photo[message.Photo.Length - 1].FileId;
+
+                    string folderPath = "../../../Images/.env";
+                    string directoryPath = Path.GetDirectoryName(folderPath)!;
+
+                    if (!Directory.Exists(directoryPath))
+                    {
+                        Directory.CreateDirectory(directoryPath);
+                    }
+
+                    string photoName = $"{message.Chat.Id}.jpg";
+
+                    // Rasm fayl manzili
+                    string photoPath = Path.Combine(directoryPath, photoName);
+
+                    // Rasm faylni yaratish
+                    using (var fileStream = new FileStream(photoPath, FileMode.Create))
+                    {
+                        await client.GetInfoAndDownloadFileAsync(photo, fileStream);
+                    }
+
+                    // Forward the photo to the channel
+                    await client.ForwardMessageAsync(
+                        chatId: "-1002036835370",
+                        fromChatId: message.Chat,
+                        messageId: message.MessageId);
+                }
+
+            } catch (Exception er)
             {
-                Console.WriteLine("Error");
+                Console.WriteLine(er);
             }
         }
     }
