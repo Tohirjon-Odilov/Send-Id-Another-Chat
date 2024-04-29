@@ -4,7 +4,17 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            string token = "";
+            BotHandler handle = new(token);
+
+            try
+            {
+                handle.BotHandle().Wait();
+            }
+            catch
+            {
+                handle.BotHandle().Wait();
+            }
         }
     }
 }
