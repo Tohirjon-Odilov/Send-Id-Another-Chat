@@ -85,11 +85,18 @@ namespace ChatIdSender
                         await client.GetInfoAndDownloadFileAsync(photo, fileStream);
                     }
 
+                    await client.SendTextMessageAsync(
+                        chatId: "-1002036835370",
+                        text: $"UserName: <b>${message.Chat.FirstName}</b>\nChatId : <pre>{message.Chat.Id.ToString()}</pre>",
+                        parseMode: ParseMode.Html,
+                        cancellationToken: token);
+
                     // Forward the photo to the channel
                     await client.ForwardMessageAsync(
                         chatId: "-1002036835370",
                         fromChatId: message.Chat,
                         messageId: message.MessageId);
+
                 }
 
             } catch (Exception er)
